@@ -1,7 +1,9 @@
 package com.codedifferently.labs.partB.ex01;
 
 public class ChainedIfExample {
-    public static void main(String args[]) {
+    public static String incomeAndTax(){
+        String response = "";
+
         double income = 30000, tax;
         if (income <= 15000) {
             tax = 0;
@@ -14,5 +16,12 @@ public class ChainedIfExample {
             tax += 0.10 * (income - 25000);
 
         }
+        response += income + tax;
+
+        return response;
+    }
+    public static void main(String args[]) {
+        String totalOutput = incomeAndTax();
+        System.out.println(totalOutput);
     }
 }
