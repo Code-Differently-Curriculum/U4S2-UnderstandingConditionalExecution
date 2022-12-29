@@ -8,9 +8,9 @@ public class ComputeFairTest {
 
     @Test
     public void IndexingTest01(){
-        String age = "27";
+        int age = 27;
         String expected = "fare=5$";
-        String actual = ComputeFare.compute( age);
+        int actual = ComputeFare.compute( age);
         Assertions.assertEquals(expected, actual);
     }
 }

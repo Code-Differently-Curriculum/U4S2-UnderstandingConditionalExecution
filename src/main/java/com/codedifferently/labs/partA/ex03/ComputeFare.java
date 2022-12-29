@@ -3,8 +3,8 @@ package com.codedifferently.labs.partA.ex03;
 import java.util.Scanner;
 
 public class ComputeFare {
-    public static String compute (String age){
-        String response = "";
+    public static int compute (int age){
+        int response = 0;
         /* Put your code in between these comments : Top */
 
 
@@ -15,13 +15,13 @@ public class ComputeFare {
         return response;
     }
     public static void main(String args[]) {
-        String age = "";
+        int age = 0;
         /* Put your code in between these comments : Top */
 
 
         /* Put your code in between these comments : Bottom */
 
-        String computeOutput = compute(age);
+        int computeOutput = compute(age);
         System.out.println(computeOutput);
 
 
